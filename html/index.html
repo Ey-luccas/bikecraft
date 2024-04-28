@@ -5,7 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style/style.css">
-
+  <!-- Fonte: Roboto-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- Fonte: Poppins-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>BikeCraft</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a BikeCraft.">
 </head>
@@ -21,11 +28,66 @@
         <ul id="ul-menu">
           <li> <a href="./bicicletas.html"> Bicicletas</a></li>
           <li> <a href="./seguros.html"> Seguros</a></li>
-          <li><a href="./contato.html"> Contato</a></li>
+          <li> <a href="./contato.html"> Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <main>
+    <!-- Div "Main" segurará o corpo do site! -->
+    <section id="g-introducao-bg">
+      <!-- Div "Section" segurará o corpo da div container  -->
+
+      <div id="container-introducao">
+
+        <div class="g-conteudotexto-introducao">
+          <h1>Bicicletas feitas sob medida<span>.</span></h1>
+          <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+          <a href="/"> Escolha a sua</a>
+        </div>
+
+        <div class="g-imgintroducao">
+          <img src="/img/fotos/introducao.jpg" alt=" Bikcraft totalmente eletrica">
+        </div>
+
+      </div>
+    </section>
+    <article id="g-list-bike-bg">
+      <div id="container-list-bike">
+        <h1>escolha a sua<span>.</span> </h1>
+        <ul class="ul-daListbike">
+          <li>
+            <a href="/"> <img src="/img/bicicletas/magic-home.jpg" alt="">
+              <h3>Magic Might</h3>
+              <h4> R$ 2499</h4>
+            </a>
+          </li>
+          <li>
+            <a href="/"><img src="/img/bicicletas/nebula-home.jpg" alt="">
+              <h3>Magic Might</h3>
+              <h4> R$ 2499</h4>
+            </a>
+
+          </li>
+          <li>
+            <a href="/">
+              <img src="/img/bicicletas/nimbus-home.jpg" alt="">
+              <h3>Magic Might</h3>
+              <h4> R$ 2499</h4>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+
+    </article>
+    <section style="height: 500px;">
+
+    </section>
+  </main>
+
+
   <script>
     // Selecionando o primeiro botão mobile
     const btnMobile = document.querySelector('.btn-mobile');

@@ -1,0 +1,176 @@
+/* Estilos para a seção de introdução */
+#g-introducao-bg {
+  margin: 0px;
+  display: grid;
+  justify-content: center;
+  background-color: black;
+  box-shadow: inset 0px -120px 0px #fff;
+  width: 100%;
+}
+
+#container-introducao {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  padding: 0 20px;
+}
+
+.g-conteudotexto-introducao {
+  align-self: center;
+  padding-bottom: 120px;
+}
+
+.g-conteudotexto-introducao h1,
+.g-conteudotexto-introducao p,
+.g-conteudotexto-introducao a {
+  margin: 0;
+}
+
+.g-conteudotexto-introducao h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  line-height: 1.125;
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+  padding-top: 50px;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.g-conteudotexto-introducao h1 span {
+  color: #ff9900;
+}
+
+.g-conteudotexto-introducao p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #b2b2b2;
+  margin-bottom: 32px;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+.g-conteudotexto-introducao a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #332200;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+.g-imgintroducao {
+  grid-column: 2;
+}
+
+.g-imgintroducao img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#g-parte2 {
+  width: 100vw;
+  height: 300px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .g-conteudotexto-introducao {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+
+  #container-introducao {
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 900px) {
+  .g-conteudotexto-introducao h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .g-conteudotexto-introducao p {
+    font-size: 1.1rem;
+    margin-bottom: 17px;
+  }
+}
+
+@media (max-width: 630px) {
+  #g-introducao-bg {
+    background-color: transparent;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.87), rgb(32, 32, 32)),
+      url("/img/fotos/introducao.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #container-introducao {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 0px;
+    padding: 0 10px;
+    position: relative;
+    box-sizing: content-box;
+  }
+
+  .g-conteudotexto-introducao {
+    grid-row: 1;
+    padding-bottom: 20px;
+  }
+
+  .g-conteudotexto-introducao h1 {
+    max-width: 15ch;
+    font-size: 3.5rem;
+  }
+
+  .g-conteudotexto-introducao p {
+    max-width: 35ch;
+    font-size: 1.5rem;
+  }
+
+  .g-imgintroducao {
+    display: none;
+  }
+
+  #g-introducao-bg {
+    display: grid;
+    justify-content: center;
+    background-color: black;
+    box-shadow: inset 0px 0px 0px #fff;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .g-conteudotexto-introducao h1 {
+    padding-top: 0px;
+    max-width: 20ch;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  .g-conteudotexto-introducao p {
+    max-width: 45ch;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .g-conteudotexto-introducao a {
+    display: inline-block;
+    padding: 16px 30px;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+  }
+}
