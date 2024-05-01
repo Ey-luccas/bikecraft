@@ -1,149 +1,149 @@
 /* Estilos para o cabeçalho */
 header {
-  width: 100%;
-  height: auto;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  margin: 0px;
+  width: 100%; /* Largura total */
+  height: auto; /* Altura automática */
+  background-color: black; /* Cor de fundo preta */
+  display: flex; /* Exibe como flexbox */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  margin: 0; /* Margem zero */
 }
 
 /* Estilos para o menu de navegação */
 #ul-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  margin: 0; /* Margem zero */
+  padding: 0; /* Preenchimento zero */
+  list-style: none; /* Remove marcadores de lista */
+  display: flex; /* Exibe como flexbox */
+  flex-wrap: wrap; /* Quebra de linha automática */
+  gap: 40px; /* Espaço entre os itens */
 }
 
 #ul-menu a {
-  text-decoration: none;
-  color: #ffffff;
-  display: inline-block;
-  padding: 16px 15px;
-  font-size: 18px;
-  position: relative;
-  transition: all ease 0.2s;
+  text-decoration: none; /* Remove decoração de link */
+  color: #ffffff; /* Cor do texto branca */
+  display: inline-block; /* Exibe como bloco inline */
+  padding: 16px 15px; /* Preenchimento */
+  font-size: 1.125rem; /* Tamanho da fonte */
+  position: relative; /* Posição relativa */
+  transition: all ease 0.2s; /* Transição suave */
 }
 
 #ul-menu a:hover {
-  color: #ff9900;
-  font-size: 19px;
-  text-shadow: 0px 0px 15px rgba(252, 190, 97, 0.589);
+  color: #ff9900; /* Cor do texto laranja ao passar o mouse */
+  font-size: 1.1875rem; /* Tamanho da fonte aumenta ao passar o mouse */
+  text-shadow: 0px 0px 15px rgba(252, 190, 97, 0.589); /* Sombra do texto ao passar o mouse */
 }
 
 /* Estilos para o contêiner do cabeçalho */
 .hea-container {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-  box-sizing: border-box;
-  padding: 10px 20px;
+  width: 100%; /* Largura total */
+  max-width: 1200px; /* Largura máxima */
+  display: flex; /* Exibe como flexbox */
+  gap: 20px; /* Espaço entre os itens */
+  flex-wrap: wrap; /* Quebra de linha automática */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: space-between; /* Espaço entre os itens */
+  background-color: black; /* Cor de fundo preta */
+  box-sizing: border-box; /* Caixa de borda */
+  padding: 10px 20px; /* Preenchimento */
 }
 
 .btn-mobile {
-  display: none;
+  display: none; /* Oculta o botão em telas maiores */
 }
 
 /* Media queries */
 @media (max-width: 800px) {
   #ul-menu a {
-    background-color: #141414;
-    padding: 20px 25px;
-    border-radius: 5px;
-    font-size: 14px;
+    background-color: #141414; /* Cor de fundo do item do menu */
+    padding: 20px 25px; /* Preenchimento */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 0.875rem; /* Tamanho da fonte */
   }
 
   .hea-container {
-    padding: 50px 50px 10px 50px;
-    justify-content: center;
-    gap: 10px 0;
+    padding: 50px 50px 10px 50px; /* Preenchimento */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 10px 0; /* Espaço entre os itens */
   }
 
   .link-logo {
-    width: 70vw;
+    width: 70vw; /* Largura da logo */
   }
 
   #nav {
-    width: 70vw;
+    width: 70vw; /* Largura do menu */
   }
 }
 
 @media (max-width: 557px) {
   .hea-container {
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: space-between; /* Espaço entre os itens */
+    flex-wrap: nowrap; /* Não quebra linha */
   }
 
   .link-logo {
-    width: auto;
+    width: auto; /* Largura automática */
   }
 
   #nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: initial;
-    width: auto;
+    display: flex; /* Exibe como flexbox */
+    flex-wrap: wrap; /* Quebra de linha automática */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    position: initial; /* Posição padrão */
+    width: auto; /* Largura automática */
   }
 
   .btn-mobile {
-    display: block;
-    background-color: #ff9900;
-    border-radius: 10px;
-    border: none;
+    display: block; /* Exibe o botão em telas menores */
+    background-color: #ff9900; /* Cor de fundo laranja */
+    border-radius: 10px; /* Borda arredondada */
+    border: none; /* Sem borda */
   }
 
   .btn-mobile img {
-    width: 30px;
+    width: 30px; /* Largura da imagem */
   }
 
   #ul-menu {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 96px;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.966);
-    height: 0;
-    visibility: hidden;
-    overflow-y: hidden;
-    z-index: 1000;
-    transition: all ease 0.5s;
-    padding-top: 20px;
+    display: block; /* Exibe o menu em telas menores */
+    position: absolute; /* Posição absoluta */
+    width: 100%; /* Largura total */
+    top: 96px; /* Distância do topo */
+    right: 0; /* Alinhamento à direita */
+    background-color: rgba(0, 0, 0, 0.966); /* Cor de fundo */
+    height: 0; /* Altura zero para ocultar inicialmente */
+    visibility: hidden; /* Oculta inicialmente */
+    overflow-y: hidden; /* Oculta a rolagem vertical */
+    z-index: 1000; /* Camada z */
+    transition: all ease 0.5s; /* Transição suave */
+    padding-top: 20px; /* Preenchimento superior */
   }
 
   #ul-menu a {
-    color: white;
-    font-size: 25px;
-    background-color: transparent;
-    margin-top: 10px;
-    margin-left: 20px;
+    color: white; /* Cor do texto */
+    font-size: 1.5625rem; /* Tamanho da fonte */
+    background-color: transparent; /* Cor de fundo transparente */
+    margin-top: 10px; /* Margem superior */
+    margin-left: 20px; /* Margem esquerda */
   }
 
   #nav.active #ul-menu {
-    visibility: visible;
-    overflow-y: auto;
-    height: calc(100vh - 96px);
-    display: block;
+    visibility: visible; /* Torna visível */
+    overflow-y: auto; /* Ativa a rolagem vertical */
+    height: calc(100vh - 96px); /* Altura calculada */
+    display: block; /* Exibe o menu */
   }
 
   #nav.active #ul-menu a {
-    color: white;
-    font-size: 25px;
-    background-color: transparent;
-    margin-top: 10px;
-    margin-left: 20px;
+    color: white; /* Cor do texto */
+    font-size: 1.5625rem; /* Tamanho da fonte */
+    background-color: transparent; /* Cor de fundo transparente */
+    margin-top: 10px; /* Margem superior */
+    margin-left: 20px; /* Margem esquerda */
   }
 
   #nav.active #ul-menu a:hover {
-    color: black;
+    color: black; /* Cor do texto ao passar o mouse */
   }
 }
