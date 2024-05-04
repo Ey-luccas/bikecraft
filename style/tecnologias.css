@@ -1,0 +1,380 @@
+#g-tecnologia-bg {
+  margin: 0;
+  display: grid;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  background-color: black; /* Cor de fundo preta */
+  box-shadow: inset 0px -90px 0px #fff, inset 0px 90px 0px #fff; /*Sombra interna */
+  width: 100%;
+}
+#container-tecnologia {
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  max-width: 1200px; /* Largura máxima de 1200 pixels */
+  display: grid; /* Exibe como grid */
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; /* Define 2 colunas com a mesma largura */
+  column-gap: 40px; /* Espaço entre as colunas */
+  padding: 50px 20px;
+}
+#container-tecnologia h3 {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: rgb(153, 153, 153);
+  margin-bottom: 25px;
+}
+#container-tecnologia h1 {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  max-width: 15ch;
+  font-weight: 650;
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+}
+#container-tecnologia h1 span {
+  color: #ff9900;
+}
+#container-tecnologia p {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  max-width: 39ch;
+  color: rgb(153, 153, 153);
+  margin-bottom: 20px;
+}
+#container-tecnologia h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ff9900;
+  margin-bottom: 44px;
+}
+#container-tecnologia h2::after {
+  margin-top: -2px;
+  display: block;
+  content: "";
+  width: 240px;
+  height: 4px;
+  background-color: #ff9900;
+}
+.subg-conteudotexto {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 0px 20px;
+  box-sizing: content-box;
+}
+.subicone-Motor {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  align-self: end;
+}
+.subicone-rastreador {
+  grid-column: 2;
+  grid-row: 1;
+}
+.subg-conteudotexto h4 {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+}
+.subt-Motor {
+  display: initial;
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0px;
+}
+.subt-rastreador {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0px;
+}
+.subp-Motor {
+  grid-column: 1;
+  grid-row: 3;
+}
+.subp-rastreador {
+  grid-column: 2;
+  grid-row: 3;
+}
+.subg-conteudotexto p.subp-rastreador,
+.subg-conteudotexto p.subp-Motor {
+  max-width: 26ch !important;
+  font-size: 15px !important;
+  margin-bottom: 0px !important;
+}
+
+.g-imgtecnologia img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  #container-tecnologia h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #container-tecnologia h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  #container-tecnologia p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    max-width: 50ch;
+  }
+}
+@media (max-width: 1000px) {
+  #g-tecnologia-bg {
+    box-shadow: inset 0px -80px 0px #fff, inset 0px 80px 0px #fff;
+  }
+  #container-tecnologia h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+  #container-tecnologia h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  #container-tecnologia p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    max-width: 50ch;
+  }
+  .subg-conteudotexto h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .subicone-Motor,
+  .subt-rastreador {
+    margin-bottom: 5px;
+  }
+  .subg-conteudotexto p.subp-rastreador,
+  .subg-conteudotexto p.subp-Motor {
+    max-width: 26ch !important;
+    font-size: 14px !important;
+    margin-bottom: 0px !important;
+  }
+  #container-tecnologia h2 {
+    font-size: 20px;
+    color: #ff9900;
+    margin-bottom: 30px;
+  }
+  #container-tecnologia h2::after {
+    width: 220px;
+    height: 4px;
+  }
+}
+@media (max-width: 900px) {
+  #g-tecnologia-bg {
+    box-shadow: inset 0px -60px 0px #fff, inset 0px 60px 0px #fff;
+  }
+  #container-tecnologia h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  #container-tecnologia p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    max-width: 48ch;
+  }
+}
+
+@media (max-width: 800px) {
+  #container-tecnologia h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  #g-tecnologia-bg {
+    box-shadow: inset 0px -60px 0px #fff, inset 0px 60px 0px #fff;
+  }
+  #container-tecnologia h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  #container-tecnologia p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    max-width: 48ch;
+  }
+  #container-tecnologia h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  #container-tecnologia h2::after {
+    width: 165px;
+    height: 3px;
+  }
+  .subg-conteudotexto h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .subg-conteudotexto p.subp-rastreador,
+  .subg-conteudotexto p.subp-Motor {
+    max-width: 27ch !important;
+    font-size: 11px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #container-tecnologia h3 {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  #g-tecnologia-bg {
+    box-shadow: inset 0px -60px 0px #fff, inset 0px 60px 0px #fff;
+  }
+  #container-tecnologia h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  #container-tecnologia p {
+    font-size: 9px;
+    margin-bottom: 6px;
+    max-width: 50ch;
+  }
+  #container-tecnologia h2 {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  #container-tecnologia h2::after {
+    width: 132px;
+    height: 3px;
+  }
+  .subg-conteudotexto h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .subg-conteudotexto p.subp-rastreador,
+  .subg-conteudotexto p.subp-Motor {
+    max-width: 20ch !important;
+    font-size: 10px !important;
+    margin-bottom: 0px !important;
+  }
+}
+@media (max-width: 650px) {
+  #container-tecnologia {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+  }
+  .g-imgtecnologia img {
+    display: none;
+  }
+  .g-conteudotexto-tecnologia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    align-items: center;
+    padding: 40px 0px;
+    gap: 0px 20px;
+  }
+  .g-conteudotexto-tecnologia h1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .g-conteudotexto-tecnologia h3 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .g-conteudotexto-tecnologia p {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .g-conteudotexto-tecnologia h2 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .subg-conteudotexto {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+  }
+  .subg-conteudotexto p.subp-Motor {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  #container-tecnologia h3 {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  #g-tecnologia-bg {
+    box-shadow: inset 0px -60px 0px #fff, inset 0px 60px 0px #fff;
+  }
+  #container-tecnologia h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  #container-tecnologia p {
+    font-size: 9px;
+    margin-bottom: 6px;
+    max-width: 50ch;
+  }
+  #container-tecnologia h2 {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  #container-tecnologia h2::after {
+    width: 132px;
+    height: 3px;
+  }
+  .subg-conteudotexto h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .subg-conteudotexto p.subp-rastreador,
+  .subg-conteudotexto p.subp-Motor {
+    max-width: 20ch !important;
+    font-size: 9px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  #container-tecnologia {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+  }
+  .g-imgtecnologia img {
+    display: none;
+  }
+  .g-conteudotexto-tecnologia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    align-items: center;
+    padding: 40px 0px;
+    gap: 0px;
+  }
+  .g-conteudotexto-tecnologia h1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .g-conteudotexto-tecnologia h3 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .g-conteudotexto-tecnologia p {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .g-conteudotexto-tecnologia h2 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .subg-conteudotexto {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .subg-conteudotexto p.subp-Motor {
+    grid-column: 2;
+  }
+}

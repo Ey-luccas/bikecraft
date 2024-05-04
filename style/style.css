@@ -1,6 +1,7 @@
 @import url(introducao.css);
 @import url(header.css);
 @import url(list-bike.css);
+@import url(tecnologias.css);
 
 body {
   font-family: "poppins", Arial, Helvetica, sans-serif;

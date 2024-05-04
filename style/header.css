@@ -76,7 +76,7 @@ header {
   }
 }
 
-@media (max-width: 557px) {
+@media (max-width: 587px) {
   .hea-container {
     justify-content: space-between; /* Espaço entre os itens */
     flex-wrap: nowrap; /* Não quebra linha */
