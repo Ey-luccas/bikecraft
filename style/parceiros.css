@@ -1,0 +1,182 @@
+#g-parceiros-bg {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%; /* Utilizando shorthand para cor */
+}
+
+#container-parceiros {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1200px;
+  display: grid;
+  grid-template-rows: auto auto; /* Utilizando shorthand para definir duas linhas automáticas */
+  padding: 0 20px 50px 20px;
+}
+
+#container-parceiros h1 {
+  margin: 50px 0 20px 40px; /* Utilizando shorthand para margin */
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#container-parceiros h1 span {
+  color: #ff9900;
+}
+
+.g-logoparceiros {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto auto; /* Utilizando shorthand para definir duas linhas automáticas */
+}
+
+.e-blocoimg1,
+.e-blocoimg2,
+.e-blocoimg3,
+.e-blocoimg4 {
+  padding: 30px 40px;
+  display: flex; /* Mudando de grid para flex para simplificar */
+  justify-content: center;
+  align-items: flex-end; /* Mudando de align-content para align-items */
+}
+
+.e-blocoimg1 {
+  box-shadow: inset 0 -2px 0 #cfcfcf, inset -2px 0 0 #cfcfcf; /* Otimizando sombra interna */
+}
+
+.e-blocoimg2 {
+  box-shadow: inset 0 -2px 0 #cfcfcf;
+}
+
+.e-blocoimg3 {
+  box-shadow: inset -2px 0 0 #cfcfcf;
+}
+
+.e-blocoimg1 img,
+.e-blocoimg2 img,
+.e-blocoimg3 img,
+.e-blocoimg4 img {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130px;
+  height: auto; /* Garantindo que a altura seja ajustada automaticamente */
+}
+
+/* Agrupando classes com propriedades idênticas */
+.e-logocaravan {
+  grid-column: 1;
+  grid-row: 1;
+}
+.e-logodogs {
+  grid-column: 2;
+  grid-row: 1;
+}
+.e-logoflexblog {
+  grid-column: 3;
+  grid-row: 1;
+}
+.e-logohandel {
+  grid-column: 4;
+  grid-row: 1;
+}
+.e-logolescone {
+  grid-column: 1;
+  grid-row: 2;
+}
+.e-logoranek {
+  grid-column: 2;
+  grid-row: 2;
+}
+.e-logosurfbo {
+  grid-column: 3;
+  grid-row: 2;
+}
+.e-logowildbeast {
+  grid-column: 4;
+  grid-row: 2;
+}
+@media (max-width: 600px) {
+  #container-parceiros h1 {
+    margin: 30px 0 20px 40px; /* Utilizando shorthand para margin */
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .g-logoparceiros {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(
+      4,
+      auto
+    ); /* Utilizando shorthand para definir duas linhas automáticas */
+  }
+  .e-logocaravan {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .e-logodogs {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .e-logoflexblog {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .e-logohandel {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .e-logolescone {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .e-logoranek {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .e-logosurfbo {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .e-logowildbeast {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .e-blocoimg1,
+  .e-blocoimg2,
+  .e-blocoimg3,
+  .e-blocoimg4 {
+    box-shadow: inset 0 -2px 0 #cfcfcf, inset 0px 0 0 #cfcfcf; /* Otimizando sombra interna */
+  }
+}
+
+@media (max-width: 530px) {
+  #container-parceiros h1 {
+    margin: 20px 0 20px 20px; /* Utilizando shorthand para margin */
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 430px) {
+  #container-parceiros h1 {
+    margin: 20px 0 20px 0px; /* Utilizando shorthand para margin */
+    font-size: 35px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 352px) {
+  #container-parceiros h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .e-blocoimg1,
+  .e-blocoimg2,
+  .e-blocoimg3,
+  .e-blocoimg4 {
+    padding: 25px 40px;
+    display: flex; /* Mudando de grid para flex para simplificar */
+    justify-content: center;
+    align-items: flex-end; /* Mudando de align-content para align-items */
+  }
+}
