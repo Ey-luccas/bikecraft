@@ -62,7 +62,7 @@ header {
   }
 
   .hea-container {
-    padding: 50px 50px 10px 50px; /* Preenchimento */
+    padding: 50px 50px 20px 50px; /* Preenchimento */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     gap: 10px 0; /* Espaço entre os itens */
   }

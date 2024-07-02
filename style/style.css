@@ -5,6 +5,12 @@
 @import url(parceiros.css);
 @import url(depoimento.css);
 @import url(seguro.css);
+@import url(footer.css);
+@import url(/style/utilidades/componentes.css);
+@import url(/style/utilidades/cores.css);
+@import url(/style/utilidades/tipografia.css);
+@import url(/style/termos.css);
+@import url(/style/bicicletas.css);
 
 body {
   font-family: "poppins", Arial, Helvetica, sans-serif;
@@ -23,4 +29,29 @@ a,
 blockquote {
   margin: 0;
   padding: 0px;
+}
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+img[src$=".jpg"] {
+  border-radius: 4px;
 }

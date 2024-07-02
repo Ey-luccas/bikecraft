@@ -75,7 +75,7 @@
 .ul-daListbike h4 {
   margin-left: 26px; /* Margem esquerda de 26 pixels */
   font-size: 20px; /* Tamanho da fonte de 20 pixels */
-  margin-top: -6px; /* Margem superior de -6 pixels */
+  margin-top: 8px; /* Margem superior de -6 pixels */
   color: rgb(43, 43, 43); /* Cor do texto */
   margin-bottom: 30px; /* Margem inferior de 30 pixels */
 }
